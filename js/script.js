@@ -59,6 +59,7 @@
     });
     }
 
+//tours
     function changeImage(element){
             switch(element){
               case "image/tour1_1.jpg": case "image/tour1_2.jpg":
@@ -93,7 +94,7 @@
           
   function btnClicked(){
             if(document.getElementById('rent').click){
-              alert("Заявката ви е изпратена!");
+              alert("Записахте се за това приключение!");
             }
           }
 

@@ -59,7 +59,7 @@
 /*For 'index.html' */
 
 .header-nav-index{
-	--background: rgba(255,255,255,0);
+	--background: rgba(255, 255, 255, 0);
 	--buttons-text-color: white;
 	height: 3.25rem;
 	display: flex;
@@ -271,6 +271,8 @@
 	color: white;
   }
   
+
+/**/
 .center {
 	position: absolute;
 	top: 53%;
@@ -288,7 +290,6 @@
 	
   }
   
-#more {display: none;}  
 #myBtn{
 	background-color: #ffffff; 
 	color: black; 
