@@ -1,4 +1,5 @@
 'use strict'
+
     //add and remove classes for search bar while scrolling
     
 	window.addEventListener('scroll', function() { 
@@ -58,69 +59,55 @@
     });
     }
 
-
-        //open pop-up with search bar
-        document.querySelector('#button-search').addEventListener("click", function () {
-            var background = document.querySelector('#semitransp-bckgr');
-            var searchWindow = document.querySelector('#search');
-            searchWindow.style.visibility="visible";
-            background.style.visibility="visible";
-
-        });
-        
-        //send XMLHttpRequest
-
-        var xmlhttp = new XMLHttpRequest();
-        var url = "myLinks.txt";
-
-        xmlhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            var myArr = JSON.parse(this.responseText);
-            getLinks(myArr);
+    function changeImage(element){
+            switch(element){
+              case "image/tour1_1.jpg": case "image/tour1_2.jpg":
+                document.getElementById('tour1').src=element;
+                break;
+              case "image/tour2_1.jpg": case "image/tour2_2.jpg":
+                document.getElementById('tour2').src=element;
+                break;
+              case "image/tour3_1.jpg": case "image/tour3_2.jpg":
+                document.getElementById('tour3').src=element;
+                break;
+              case "image/tour4_1.jpg": case "image/tour4_2.jpg":
+                document.getElementById('tour4').src=element;
+                break;
+              case "image/tour5_1.jpg": case "image/tour5_2.jpg":
+                document.getElementById('tour5').src=element;
+                break;
+              case "image/tour6_1.jpg": case "image/tour6_2.jpg":
+                document.getElementById('tour6').src=element;
+                break;
+              case "image/tour7_1.jpg": case "image/tour7_2.jpg":
+                document.getElementById('tour7').src=element;
+                break;
+              case "image/tour8_1.jpg": case "image/tour8_2.jpg":
+                document.getElementById('tour8').src=element;
+                break;
+              case "image/tour9_1.jpg": case "image/tour9_2.jpg":
+                document.getElementById('tour9').src=element;
+                break;
+            }
         }
-        };
-        xmlhttp.open("GET", url, true);
-        xmlhttp.send();
+          
+  function btnClicked(){
+            if(document.getElementById('rent').click){
+              alert("Заявката ви е изпратена!");
+            }
+          }
 
-        function getLinks(arr) {
-        var out = "";
-        var i;
-        for(i = 0; i < arr.length; i++) {
-            out += '<a href="' + arr[i].url + '">' + 
-            arr[i].display + '</a><br>';
-        }
-        document.getElementById("results").innerHTML = out;
-        }
-            
-        //close pop-up with search bar
-        document.querySelector('#button-exit').addEventListener("click", function () {
-            var searchWindow = document.querySelector('#search');
-            var background = document.querySelector('#semitransp-bckgr');
-            searchWindow.style.visibility="hidden";
-            background.style.visibility="hidden";
-        });
-
-
-        function readMore()
-		{
-		  var dots = document.getElementById("dots");
-		  var moreText = document.getElementById("more");
-		  var btnText = document.getElementById("myBtn");
-
-		  if (dots.style.display === "none") {
-		    dots.style.display = "inline";
-		    btnText.innerHTML = "Read more"; 
-		    moreText.style.display = "none";
-		  } else {
-		    dots.style.display = "none";
-		    btnText.innerHTML = "Read less"; 
-		    moreText.style.display = "inline";
-		  }
-		}
-        
-
-   
-
+          
+	 function ValidateEmail(mail) 
+	 {
+	 	if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
+	 	{
+	 		return true;
+	 	}
+	 		alert("Please enter an e-mail address.")
+	 		return false;
+	 }
+          
         
 
 

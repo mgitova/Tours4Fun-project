@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang = "en">
+    
+  
 <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-	<title>TOURS4FUN - Contact</title>
-	<link href="css/style-index.css" rel="stylesheet" type ="text/css">
-	
+	<title>TOURS4FUN - Tour1</title>
+	<link href="css/styleTour.css" rel="stylesheet" type ="text/css">
+
+		
 </head>
 
 <body>
-	
-	<header>
+    <header>
 		<div class="header-nav-index">
 			<h1  id="page-header-logo"><a href="index.html">TOURS<span id="span4">4</span>FUN</a></h1>
 			<div id="open-nav">≡</div>
@@ -25,41 +27,32 @@
 					</div>
 				</div>
 				<button class="header-menu-btn" onclick="window.location.href='tours.html'">Преходи в България</button>
-				<button class="header-menu-btn" onclick="window.location.href='blog.html'">Другите за нас</button>
+				<button class="header-menu-btn" onclick="window.location.href='blog.html'">Блог</button>
 				<button class="header-menu-btn" onclick="window.location.href='contact.html'">Контакти</button>
 			</nav>
 		</div>
 	</header>
 
-	<section id="info-section">
-		<div class="info-container">
-			<div class="columns">
-				<div class="card"></div>
-				<img id="blog-images" src="image/adres.jpg" alt="just image">
-				<h2>АДРЕС</h2>
-				<p> гр.Пловдив, ул."Райко Дакалов"№53 </p>
-				</div>
+    <h2>Връх Мусала</h2>
+    <div class="tour">
+        <p>Степен на трудност (1-5): 5</p>
+        <p>Дата: 21-22.09.2021 </p>
+        <p>Планина: Рила</p>
+        <p>Планински водач: Мария Йорданова</p>
+        <p>Цена: 89 лева</p>
+        <p>Със своите 2925,4 метра Мусала е седми по височина сред европейските планински първенци. Той е по-висок с 
+            8 метра от връх Митикас в планината Олимп, Гърция, и с 11 метра от връх Вихрен в Пирин, България.</p>
 
-			<div class="columns">
-				<div class="card"></div>
-				<img id="blog-images" src="image/number.jpg" alt="just image">
-				<h2>ТЕЛЕФОН</h2>
-				<p> 0899 888 999 
-				</p>
-			</div>
+        <input type="button" id="rent" value="Запиши се!" onclick="btnClicked()">
+    </div>
 
-			<div class="columns">
-				<div class="card"></div>
-				<img id="blog-images" src="image/email.jpg" alt="just image">
-				<h2>ИМЕЙЛ</h2>
-				<p> Tours4Fun@gmail.com
-				</p>
-			</div>
-		</div>
-	</section>
+    <img src="image/tour4_1.jpg" alt="tour1" id="albumCover">
+  
 
 
 	<script src="js/script.js"></script> 
+	
+
 
 </body>
 </html>
